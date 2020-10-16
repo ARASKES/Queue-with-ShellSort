@@ -1,0 +1,7 @@
+C:\Users\Andrey\source\repos\C#\QueueShellAlgorythm\obj\Debug\QueueShellAlgorythm.csprojAssemblyReference.cache
+C:\Users\Andrey\source\repos\C#\QueueShellAlgorythm\obj\Debug\QueueShellAlgorythm.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\source\repos\C#\QueueShellAlgorythm\bin\Debug\QueueShellAlgorythm.exe.config
+C:\Users\Andrey\source\repos\C#\QueueShellAlgorythm\bin\Debug\QueueShellAlgorythm.exe
+C:\Users\Andrey\source\repos\C#\QueueShellAlgorythm\bin\Debug\QueueShellAlgorythm.pdb
+C:\Users\Andrey\source\repos\C#\QueueShellAlgorythm\obj\Debug\QueueShellAlgorythm.exe
+C:\Users\Andrey\source\repos\C#\QueueShellAlgorythm\obj\Debug\QueueShellAlgorythm.pdb
