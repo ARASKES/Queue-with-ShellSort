@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Queue
 {
@@ -11,16 +11,14 @@ public class Queue
 
   public int Count
   {
-    get
-    {
+    get {
       return elements.Length;
     }
   }
 
   public bool isEmpty
   {
-    get
-    {
+    get {
       return elements.Length == 0;
     }
   }
@@ -59,6 +57,40 @@ public class Queue
     return elements[0];
   }
 
+  private int Get(int index)
+  {
+    int elementNeeded;
+
+    for (int i = 0; i < index; i++)
+    {
+      Enqueue(Dequeue());
+    }
+
+    elementNeeded = Peek();
+
+    for (int i = index; i < elements.Length; i++)
+    {
+      Enqueue(Dequeue());
+    }
+
+    return elementNeeded;
+  }
+
+  private void Set(int index, int value)
+  {
+    for (int i = 0; i < index; i++)
+    {
+      Enqueue(Dequeue());
+    }
+
+    elements[0] = value;
+
+    for (int i = index; i < elements.Length; i++)
+    {
+      Enqueue(Dequeue());
+    }
+  }
+
   public void ShellSort()
   {
     //  Регулировка шага (стандартным методом Шелла, начиная с половины размера)
@@ -68,11 +100,11 @@ public class Queue
       for (int i = step; i < elements.Length; i++)
       {
         //  Перестановка элементов по возрастанию внутри участка между j-тым и i-тым элементами, до элемента с индексом i
-        for (int j = i - step; j >= 0 && elements[j] < elements[j + step]; j -= step)
+        for (int j = i - step; j >= 0 && Get(j) < Get(j + step); j -= step)
         {
-          int temp = elements[j];
-          elements[j] = elements[j + step];
-          elements[j + step] = temp;
+          int temp = Get(j);
+          Set(j, Get(j + step));
+          Set(j + step, temp);
         }
       }
     }
