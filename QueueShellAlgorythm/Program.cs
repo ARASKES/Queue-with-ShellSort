@@ -22,7 +22,6 @@ namespace QueueShellAlgorythm
       {
         queue = new Queue();  //  Создаем очередь, имеющую размер из выборки
 
-
         for (int i = 0; i < quantitySelection[sessionNumber - 1]; i++)
         {
           queue.Enqueue(random.Next(1, 1000));  //  Заполняем очередь случайными числами от 1 до 1000

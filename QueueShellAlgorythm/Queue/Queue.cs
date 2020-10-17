@@ -11,14 +11,16 @@ public class Queue
 
   public int Count
   {
-    get {
+    get
+	{
       return elements.Length;
     }
   }
 
   public bool isEmpty
   {
-    get {
+    get
+	{
       return elements.Length == 0;
     }
   }
