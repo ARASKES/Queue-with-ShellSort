@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 
 namespace QueueShellAlgorythm
@@ -13,7 +13,7 @@ namespace QueueShellAlgorythm
       Queue queue;  //  Создадим экземпляр очереди
 
       int[] quantitySelection = {
-        500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 20000, 50000, 75000, 100000, 250000
+        200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000
       };  //  Создадим выборку размеров очереди для каждого из экспериментов
 
       long ops = 0; //  Создадим переменную для записи количества операций
